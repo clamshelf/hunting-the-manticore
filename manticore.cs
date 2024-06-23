@@ -24,7 +24,7 @@ while (shipHP > 0 && cityHP > 0)
     }
     if (cityHP > 0 && shipHP > 0) // the round divider only appears if another round is beginning
     {
-        Console.WriteLine("_________________________________________________________________");
+        Console.WriteLine("_________________________________________________________________________________________");
         Console.WriteLine("");
     }
     round++;
