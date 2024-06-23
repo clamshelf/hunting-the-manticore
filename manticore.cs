@@ -1,16 +1,16 @@
 // one player controls an airship called the Manticore, and another player controls the defenses of a city called Consolas that the
 // airship is attacking
 
+int shipHP = 10;
+int cityHP = 15;
+int round = 1;
+int target;
+
 Console.WriteLine("Manticore, what position will you take to begin your bombardment of Consolas?");
 int shipDistance = AskForNumberInRange("Your cannon is powerful and can target the city from up to one hundred miles away.", 1, 100);
 Console.WriteLine($"{shipDistance} miles away is a good position.  Now it's the defenders' turn.");
 Console.Beep(37, 2000); // menacing; lets the pilot see the above message before the screen is cleared
 Console.Clear();
-
-int shipHP = 10;
-int cityHP = 15;
-int round = 1;
-int target;
 
 while (shipHP > 0 && cityHP > 0)
 {
